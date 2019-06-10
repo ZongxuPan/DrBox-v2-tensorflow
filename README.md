@@ -70,20 +70,20 @@ Important parameter description
   > Choose the GPU to train or test the model.
 
 2 LOAD_PREVIOUS_POS
-  > For each dataset, the network needs to select positive sample and encode them according to preset parameters of prior RBox. So when you use new dataset or change the parameters of prior RBox, LOAD_PREVIOUS_POS should be set to "False"; when the data and these hyperparameters are unchanged, the encoding does not need to be repeated, so LOAD_PREVIOUS_POS should be set to "True".
+  > For each dataset, the network needs to select positive sample and encode them according to preset parameters of prior RBox. So when you use new dataset or change the parameters of prior RBox, LOAD_PREVIOUS_POS should be set to "False"; when the data and these hyperparameters are unchanged, the encoding does not need to be computed repeatedly, so LOAD_PREVIOUS_POS should be set to "True" for fast implementation.
 
 3 USE_THIRD_LAYER
-   > This parameter determines whether or not to use the multi-layer prediction. Set to 1 if used, otherwise set to 0.
+   > This parameter determines whether or not to use the multi-layer prediction. Set it to 1 if used, otherwise set it to 0.
 
 4 FPN_NET
-   > This parameter determines whether or not to use the FPN structure. Set to 1 if used, otherwise set to 0.
+   > This parameter determines whether or not to use the FPN structure. Set it to 1 if used, otherwise set it to 0.
 
-5 USE_FOCAL_LOSS abnd focal_loss_factor
-   > "USE_FOCAL_LOSS" determines whether or not to use focal loss. Set to 1 if used and focal_loss_factor is the factor of focal loss, otherwise set "USE_FOCAL_LOSS" to 0.
+5 USE_FOCAL_LOSS and focal_loss_factor
+   > "USE_FOCAL_LOSS" determines whether or not to use focal loss. Set "USE_FOCAL_LOSS" to 1 if used and focal_loss_factor is the factor of focal loss, otherwise set "USE_FOCAL_LOSS" to 0.
 
-View Results and Build Your Own Dataset
+Build Your Own Dataset
 --
-Please learn about the content at https://github.com/liulei01/DRBox.
+For building your own dataset, please use the annotation tool at https://github.com/liulei01/DRBox.
 
 
 Example
