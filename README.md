@@ -5,6 +5,7 @@ This code is the tensorflow implementation of DrBox-v2 which is an improved dete
 Introduction
 --
 DRBox-v2 is a detector with rotatable boxes for target detection in remote sensing images.
+
 The details of this method can be found in our paper "DRBox-v2: An Improved Detector with Rotatable Boxes for Target Detection in SAR Images", that will be published in IEEE Transactions on Geoscience and Remote Sensing, the DOI of which is 10.1109/TGRS.2019.2920534. Please cite this paper in your publications if it helps your research.
 
 
