@@ -1,10 +1,10 @@
 DRBox-v2
 ==
-By Zongxu Pan (mail:zxpan@mail.ie.ac.cn), Quanzhi An(anquanzhi16@mails.ucas.ac.cn) and Lei Liu.
+This code is the tensorflow implementation of DrBox-v2 which is an improved detector with rotatable boxes for target detection in remote sensing images, and is written by Zongxu Pan (mail:zxpan@mail.ie.ac.cn), Quanzhi An(anquanzhi16@mails.ucas.ac.cn) and Lei Liu.
 
 Introduction
 --
-DRBox-v2 is used for detecting targets for SAR images, and its corresponding paper "DRBox-v2:An Improved Detector with Rotatable Boxes for Target Detection in SAR Images" has been published in IEEE Transactions on Geoscience and Remote Sensing, the DOI of which is 10.1109/TGRS.2019.2920534. Please cite this work in your publications if it helps your research.
+DRBox-v2 is a detector with rotatable boxes for target detection in remote sensing images. The details of this method can be found in our paper "DRBox-v2: An Improved Detector with Rotatable Boxes for Target Detection in SAR Images", that will be published in IEEE Transactions on Geoscience and Remote Sensing, the DOI of which is 10.1109/TGRS.2019.2920534. Please cite this paper in your publications if it helps your research.
 
 
 Data preparation
@@ -14,7 +14,7 @@ Data preparation
    >Every image has a corresponding annotation file('.rbox' file). Each line in the annotation file ('.rbox') represents a target in the image and consists of six annotation parameters, which are the coordinates of the horizontal and vertical directions of the center point, the length, width, category and angle of the target (the included angle between the principal axis of the RBox and the X-axis).
    >For example, the size of the following figure is (300,300), and the annotation information of the target is:
    
-   ![](https://github.com/Anquanzhi/test1/blob/master/figure1.PNG)
+   ![](https://github.com/ZongxuPan/DrBox-v2-tensorflow/blob/master/figure1.png)
    
 ```
    180.087143 235.796040 63.747273 14.874003 1 25.974394
