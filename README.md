@@ -7,7 +7,9 @@ Introduction
 DRBox-v2 is a detector with rotatable boxes for target detection in remote sensing images.
 
 The details of this method can be found in our following paper:
+
 Quanzhi An, Zongxu Pan*, Lei Liu, and Hongjian You, "DRBox-v2: An improved detector with rotatable boxes for target detection in SAR images", IEEE Transactions on Geoscience and Remote Sensing, to be published.
+
 The DOI of this paper is 10.1109/TGRS.2019.2920534.
 
 Please cite this paper in your publications if it helps your research.
