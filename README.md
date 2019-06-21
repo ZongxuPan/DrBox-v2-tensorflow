@@ -58,7 +58,7 @@ Data interface
 3 PRETRAINED_NET_PATH
 
   >The path to the pre-training model(vgg16.npy).
-  You can download the file at https://pan.baidu.com/s/1tbeZgYEbuQYdSAcdmrX-fg, and the password is 'bh96'.
+  The file 'vgg16.npy' is the pretrained model of VGG16.
 
 4 SAVE_PATH
 
