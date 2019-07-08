@@ -107,3 +107,9 @@ Example
 ```Bash
   python Drbox.py
 ```
+
+
+Q & A
+--
+1 In this implementation, the height and the width of the image are set as 300. Which part of the codes I need to change if the height and/or the width of the input image are not 300?
+  > Please set IM_HEIGHT and IM_WIDTH as the desired values. In addition, FEA_HEIGHT4 and FEA_WIDTH4 which represent the size of the feature map of conv4_3 are needed to be altered accordingly, so are FEA_HEIGHT3 and FEA_WIDTH3 which denote the size of the feature map of conv3_3.
