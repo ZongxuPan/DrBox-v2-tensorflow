@@ -93,6 +93,12 @@ Build Your Own Dataset
 --
 For building your own dataset, please use the annotation tool at https://github.com/liulei01/DRBox.
 
+Configuration
+--
+tensorflow1.2.1
+python2.7
+numpy1.13
+cuda8
 
 Example
 --
