@@ -123,6 +123,12 @@ Example
   python Drbox.py
 ```
 
+3 When you want to evaluate the test results:
+
+```Bash
+  python evaluation.py
+```
+
 
 Q & A
 --
