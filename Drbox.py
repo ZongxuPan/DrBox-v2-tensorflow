@@ -346,7 +346,7 @@ class DrBoxNet():
         for test_info in self.test_im_list:
             test_im_rbox_info = test_info.split(' ')
             test_im_path = os.path.join(TEST_DATA_PATH, test_im_rbox_info[0])
-            test_rbox_gt_path = os.path.join(TEST_DATA_PATH, test_im_rbox_info[1]+'.rbox')
+            test_rbox_gt_path = os.path.join(TEST_DATA_PATH, test_im_rbox_info[0]+'.rbox')
             test_result_path = TXT_DIR + '/' + os.path.basename(SAVE_PATH)
             if not os.path.exists(test_result_path):
             		os.makedirs(test_result_path)
