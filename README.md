@@ -98,11 +98,15 @@ Configuration
 --
 tensorflow1.2.1
 
-python2.7
+python2.7.12
 
-numpy1.13
+numpy1.13.0
 
-cuda8
+scipy0.19.1
+
+ctypes1.1.0
+
+cuda8.0.61
 
 
 Example
