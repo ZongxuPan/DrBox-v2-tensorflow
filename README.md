@@ -139,15 +139,26 @@ Q & A
   > The following aspects are suggested:
   >
   > (1) The two parameters PRIOR_HEIGHTS and PRIOR_WEIGHTS appear in pairs. In other words, the two lists should have the same length. Reasonable setting of these two parameters needs to be considered in combination with your own data. Generally, several distribution centers of the target lengths and widths in the data set are selected as the basis for setting these two parameters. Please see our paper "DRBox-v2:An Improved Detector with Rotatable Boxes for Target Detection in SAR Images" IV, B, 2) for reference.
+  >
   > (2) The setting of the "IS180" parameter is related to the characteristics of the targets in your data. When the head and tail of the target can be distinguished, (the angles of targets ranges from 0 to 360 in the annotation file) the parameter should be set to False, and PRIOR_ANGLES can be set to [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]; otherwise, the parameter is set to True.
+  >
   > (3) When you use your own data, we recommend that you still set the image block size to 300×300, so you don't need to change the feature size (FEA_HEIGHT and FEA_WIDTH) and some other parameters. Otherwise, you need to adjust the feature size, stepsize according to your own data. In addition, please ensure that your annotation data is consistent with the sample and there are no problems such as crossing the boundary.
+  >
   > (4) In order to ensure the correctness of the data preparation, you could check your own annotation data as follows. You can mark the prior boxes in "pkl" file (which plays as positive samples) on images. The plotted box should cover the target well.
+  >
   > (5) You can modify the parameter settings as needed:
+  >
   >     a) OVERLAP_THRESHOLD: this parameter affects the selection of positive samples.
+  >
   >     b) TEST_SCORE_THRESHOLD: this parameter controls retained results in the test phase.
+  >
   >     c) TEST_NMS_THRESHOLD: this parameter controls the NMS threshold in the test phase.
+  >
   > (6) You can check the loss curve during the training process. When the loss curve is abnormal, the following actions are recommended:
+  >
   >     a) You can comment on one loss, and observe the situation of the other loss to locate the problem. (self.loss = self.loc_loss + self.conf_loss)
+  >
   >     b) When the location loss is abnormal, there may be a problem with the positive sample coding. Please check the parameter setting and the data preparation. (please see the above (3), (4), and (5) for reference)
+  >
   >     c) Please note that the unreasonable setting of PRIOR_HEIGHTS and PRIOR_WEIGHTS probably cause the abnormal of the loss.
   
